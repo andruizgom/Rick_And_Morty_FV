@@ -1,0 +1,132 @@
+.Rick{
+    position: relative;
+    width: 25.9vw;
+    top:-14.47vw;
+    left:-0.5vw;
+}
+.form{
+    position:relative;
+    top:31vw;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    background-image: radial-gradient(#e5eb02,#9adb07,#10ca04,#018c2d);
+
+    width: 25vw;
+    height: 33vw;
+    border-radius: 2% 2% 10% 10%;
+}
+.email{
+    color:black;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    position: relative;
+    top:-15vw;
+    left:10.5vw;
+}
+.emailInput{
+    display: block;
+    color:#9adb07;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 0.8vw;
+    position: relative;
+    top:-14vw;
+    left:3.5vw;
+    width: 18vw;
+    height: 2vw;
+    background-color: black;
+    border-radius: 10%;
+    border:none;
+}
+.password{
+    color:black;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    position: relative;
+    top:-14vw;
+    left:9.5vw;
+}
+.passwordInput{
+    display: block;
+    color:#9adb07;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 0.8vw;
+    position: relative;
+    top:-13vw;
+    left:3.5vw;
+    width: 18vw;
+    height: 2vw;
+    background-color: black;
+    border-radius: 10%;
+    border:none;
+}
+
+.error1{
+    width: 90%;
+    text-align: center;
+    position: relative;
+    top:-14vw;
+    left:1vw;
+    color:black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1vw;
+}
+.error2{
+    width: 90%;
+    text-align: center;
+    position: relative;
+    top:-13vw;
+    left:1vw;
+    color:black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1vw;
+}
+
+
+/* CSS */
+.submit {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: black;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 1vw;
+  font-weight: bolder;
+  font-family: 'Gloria Hallelujah', cursive;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: relative;
+  left: 9.5vw;
+  top: -12.5vw;
+  cursor: pointer;
+  
+}
+
+.submit:hover,
+.submit:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.submit:active {
+  background: var(--color);
+  color: #fff;
+}

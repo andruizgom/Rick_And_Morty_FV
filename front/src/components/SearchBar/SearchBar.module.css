@@ -1,0 +1,90 @@
+.searchBarInput{
+    background-color: black;
+    border-radius: 1vw 0 0 1vw;
+    height: 2vw;
+    width: 8vw;
+    position: relative;
+    top: 2vw;
+    left: -0.8vw;
+    border:#018c2d solid 0.2vw;
+    color: #9adb07;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 900;
+}
+
+/* CSS */
+.searchBarButton {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 0 1vw 1vw 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    left: -0.5vw;
+    top: 1.9vw;
+    color: #9adb07;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 0.8vw;
+    }
+    
+    .searchBarButton:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #018c2d,
+      #10ca04,
+      #9adb07,
+      #e5eb02,
+      #018c2d,
+      #10ca04,
+      #9adb07,
+      #e5eb02,
+      #018c2d
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 0 1vw 1vw 0;
+    }
+    
+    @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+    }
+    
+    .searchBarButton:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    border-radius: 0 1vw 1vw 0;
+    }
+
+ 
+

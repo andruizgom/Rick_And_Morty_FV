@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body{
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
+   background-image: url(./globalImages/R&M.png);
+   background-repeat: repeat;
+
+}

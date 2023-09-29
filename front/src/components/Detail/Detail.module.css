@@ -1,0 +1,121 @@
+.myCard {
+    background-color: transparent;
+    width: 37vw;
+    height: 36vw;
+    perspective: 100vw;
+    position:relative;
+    left: 50%;
+    top: 21vw;
+    transform: translate(-50%, -50%);
+  }
+
+  
+  .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide,
+  .backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: none;
+    border-radius: 50%;    
+    /* box-shadow: 0 0 0.5em #10ca04; */
+
+  }
+  
+  .frontSide,
+  .frontSide::before {
+    /* background: radial-gradient(#e5eb02 20%,#9adb07 40%,#10ca04 60%,#018c2d); */
+    background-image: url('./images/Portal.png');
+    background-size: cover;   
+    
+  }
+  
+  .backSide,
+  .backSide::before {
+    background: radial-gradient(#e5eb02 20%,#9adb07 40%,#10ca04 60%,#018c2d);
+  }
+  
+  .backSide {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide::before,
+  .backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0.3;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  .image{
+
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: solid 3vw black;
+    outline: solid 3vw #018c2d;
+    animation: girar 10s infinite linear;
+
+     
+
+    /* #e5eb02 20%,#9adb07 40%,#10ca04 60%,#018c2d */
+
+
+  }
+
+  .name, .status, .species, .gender, .origin{
+    color: black;
+    font-family: 'Kablammo', cursive;
+    font-size: 2.6vw;
+    margin:0;    
+  }

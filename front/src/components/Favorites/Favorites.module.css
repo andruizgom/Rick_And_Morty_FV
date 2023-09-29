@@ -1,0 +1,42 @@
+.container{
+
+
+}
+
+.subcontainerSelect{
+    width: 100%;
+    height: 3.2vw;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    margin-top: 0;
+    background-image: radial-gradient(#17adca, #0e4037);
+}
+
+.subcontainerCards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap:5vw;
+    grid-column-gap: 2vw;
+    margin-top: 2vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.select{
+    background-color: #17adca;
+    border: solid 0.1vw #0e4037;
+    outline: solid 0.2vw #d1d949;
+    border-radius: 1vw;
+    width: 10vw;
+    height: 2vw;
+    text-align: center;
+    color: #0e4037;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: bold;
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3vw;
+}
